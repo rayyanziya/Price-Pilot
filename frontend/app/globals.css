@@ -1,0 +1,227 @@
+:root {
+  --bg: #f4f0e8;
+  --card: rgba(255, 252, 247, 0.88);
+  --ink: #18222f;
+  --muted: #5b6673;
+  --accent: #006d77;
+  --accent-soft: #d8efe8;
+  --danger: #b42318;
+  --line: rgba(24, 34, 47, 0.14);
+  --shadow: 0 22px 60px rgba(24, 34, 47, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at top left, rgba(0, 109, 119, 0.16), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(234, 110, 75, 0.18), transparent 30%),
+    linear-gradient(180deg, #f9f5ef 0%, var(--bg) 100%);
+  color: var(--ink);
+}
+
+body {
+  min-height: 100vh;
+}
+
+.page-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0 56px;
+}
+
+.hero-card,
+.quote-form,
+.result-card {
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.hero-card {
+  padding: 28px;
+}
+
+.eyebrow,
+.result-label {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(2.6rem, 7vw, 5.4rem);
+  line-height: 0.95;
+}
+
+.lede {
+  max-width: 48rem;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(300px, 440px) 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.quote-form,
+.result-card {
+  padding: 24px;
+}
+
+.quote-form {
+  display: grid;
+  gap: 16px;
+}
+
+.quote-form label {
+  display: grid;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form button {
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  padding: 14px 16px;
+  font: inherit;
+}
+
+.quote-form input,
+.quote-form select {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--ink);
+}
+
+.quote-form button {
+  border: none;
+  background: linear-gradient(135deg, #006d77, #0f766e);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.quote-form button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-row input {
+  width: 22px;
+  height: 22px;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.price-grid article,
+.recommended,
+.metadata,
+.explanations {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.price-grid article {
+  padding: 18px;
+}
+
+.price-grid span,
+.recommended span,
+.metadata dt {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.price-grid strong,
+.recommended strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.25rem;
+}
+
+.recommended {
+  margin-top: 16px;
+  padding: 20px;
+  background: var(--accent-soft);
+}
+
+.metadata {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+  padding: 18px;
+}
+
+.metadata dd {
+  margin: 10px 0 0;
+  font-weight: 700;
+}
+
+.explanations {
+  padding: 20px;
+}
+
+.explanations h2 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.explanations ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.empty-state {
+  margin-top: 18px;
+  color: var(--muted);
+}
+
+.error-state {
+  margin-top: 18px;
+  color: var(--danger);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .price-grid {
+    grid-template-columns: 1fr;
+  }
+}

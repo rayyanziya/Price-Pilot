@@ -1,0 +1,21 @@
+country,brand,model,model_alias,storage_gb,condition_grade,listing_price_idr,battery_health_pct,has_box,source,collected_at,source_url
+ID,Apple,iPhone 13,iphone13,128,A,7249000,93,true,manual_seed,2026-04-07T10:00:00Z,https://seed.local/apple-iphone13-128-a
+ID,Apple,iPhone 13,iphone13,128,B,7099000,89,true,manual_seed,2026-04-06T10:00:00Z,https://seed.local/apple-iphone13-128-b1
+ID,Apple,iPhone 13,iphone13,128,B,6999000,87,true,manual_seed,2026-04-05T10:00:00Z,https://seed.local/apple-iphone13-128-b2
+ID,Apple,iPhone 13,iphone13,128,C,6699000,82,false,manual_seed,2026-04-04T10:00:00Z,https://seed.local/apple-iphone13-128-c
+ID,Apple,iPhone 13,iphone13,128,B,7149000,88,true,manual_seed,2026-04-03T10:00:00Z,https://seed.local/apple-iphone13-128-b3
+ID,Apple,iPhone 13,iphone13,256,A,8099000,92,true,manual_seed,2026-04-07T11:00:00Z,https://seed.local/apple-iphone13-256-a
+ID,Apple,iPhone 13,iphone13,256,B,7899000,87,true,manual_seed,2026-04-06T11:00:00Z,https://seed.local/apple-iphone13-256-b1
+ID,Apple,iPhone 13,iphone13,256,B,7999000,86,true,manual_seed,2026-04-05T11:00:00Z,https://seed.local/apple-iphone13-256-b2
+ID,Apple,iPhone 12,iphone12,128,B,5899000,85,true,manual_seed,2026-04-07T09:00:00Z,https://seed.local/apple-iphone12-128-b1
+ID,Apple,iPhone 12,iphone12,128,C,5599000,80,false,manual_seed,2026-04-05T09:00:00Z,https://seed.local/apple-iphone12-128-c1
+ID,Samsung,Galaxy S23,galaxys23,128,A,8899000,95,true,manual_seed,2026-04-07T12:00:00Z,https://seed.local/samsung-s23-128-a
+ID,Samsung,Galaxy S23,galaxys23,128,B,8599000,90,true,manual_seed,2026-04-06T12:00:00Z,https://seed.local/samsung-s23-128-b1
+ID,Samsung,Galaxy S23,galaxys23,128,B,8499000,88,true,manual_seed,2026-04-05T12:00:00Z,https://seed.local/samsung-s23-128-b2
+ID,Samsung,Galaxy S23,galaxys23,128,C,7999000,83,false,manual_seed,2026-04-04T12:00:00Z,https://seed.local/samsung-s23-128-c1
+ID,Samsung,Galaxy S23,galaxys23,128,B,8699000,89,true,manual_seed,2026-04-03T12:00:00Z,https://seed.local/samsung-s23-128-b3
+ID,Xiaomi,13T,13t,256,A,6499000,92,true,manual_seed,2026-04-07T13:00:00Z,https://seed.local/xiaomi-13t-256-a
+ID,Xiaomi,13T,13t,256,B,6299000,87,true,manual_seed,2026-04-06T13:00:00Z,https://seed.local/xiaomi-13t-256-b1
+ID,Xiaomi,13T,13t,256,B,6199000,86,true,manual_seed,2026-04-05T13:00:00Z,https://seed.local/xiaomi-13t-256-b2
+ID,Xiaomi,13T,13t,256,C,5899000,82,false,manual_seed,2026-04-04T13:00:00Z,https://seed.local/xiaomi-13t-256-c1
+ID,Xiaomi,13T,13t,256,B,6249000,88,true,manual_seed,2026-04-03T13:00:00Z,https://seed.local/xiaomi-13t-256-b3

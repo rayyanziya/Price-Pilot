@@ -1,0 +1,36 @@
+{
+  "name": "pricepilot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PricePilot MVP v1",
+  "main": "dist/src/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "dev": "ts-node src/server.ts",
+    "db:migrate": "npm run build && node dist/scripts/runMigrations.js",
+    "db:seed": "npm run build && node dist/scripts/importSeed.js",
+    "db:smoke": "npm run build && node dist/scripts/smokeQueries.js",
+    "readiness:gate": "npm run build && node dist/scripts/runReadinessGate.js",
+    "perf:quote": "npm run build && node dist/scripts/perfQuote.js",
+    "test": "npm run build && node --test dist/test/app.test.js dist/test/pricingEngine.test.js",
+    "frontend:install": "npm --prefix frontend install",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "frontend:start": "npm --prefix frontend run start"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.16.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.7.2",
+    "@types/pg": "^8.15.5",
+    "@types/supertest": "^6.0.3",
+    "supertest": "^7.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
